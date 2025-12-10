@@ -2,10 +2,9 @@ let text = document.getElementById("evaluatedText")
 let letter = document.getElementById("letterCount")
 
 // let count = 0
-text.addEventListener("input", ()=>{
-	if(text.value >= "a" && text.value <= "z"){
-		letter.innerHTML = text.value.length
-	}
+text.addEventListener("input", (event)=>{
+	
+	letter.innerHTML = text.value.length
 	
 	// if(event.key == "Backspace"){
 	// 	if(count > 0){
